@@ -42,7 +42,7 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 a {
@@ -60,10 +60,13 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: 800;
+  color: #6b879a
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
+  color: #7d9c94;
 }
 
 /* HAMBURGER MENU */
@@ -130,6 +133,13 @@ section {
   margin: auto 0;
 }
 
+.section__pic-container img {
+  border-radius: 10%; /* Makes the image round */
+  width: auto; /* Ensures the image fills the container */
+  height: 100%; /* Maintains aspect ratio */
+}
+
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -139,9 +149,20 @@ section {
   font-weight: 600;
 }
 
+.highlight {
+  color: #6b879a; /* Change the color to your desired color */
+}
+
+.highlight:hover {
+  cursor: pointer;
+  color: #7d9c94;
+}
+
+
 .section__text__p1 {
+  font-size: 1.5rem;
   text-align: center;
-  color: black; /* Default color for section__text__p1 */
+  color: #333; /* Default color for section__text__p1 */
 }
 
 .section__text__p1.dark-mode {
@@ -151,6 +172,18 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+}
+
+.section__text__p3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #292633;
+}
+
+.section__text__p4 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #292633;
 }
 
 .title {
@@ -170,7 +203,7 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 2.6rem;
 }
 
 /* BUTTONS */
@@ -189,7 +222,10 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
+.btn-color-1 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
@@ -199,22 +235,32 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-1:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
+.btn-color-1 {
+  color: black;
   background: none;
 }
 
+.btn-color-2 {
+  color: black;
+  background: none;
+}
+
+.btn-color-1:hover {
+  border: #6b879a 0.1rem solid;
+}
+
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: #6b879a 0.1rem solid;
 }
 
 .btn-container {
@@ -340,6 +386,16 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.dark-mode .project-btn {
+  color: #7d9c94;
+  border-color: rgb(163, 163, 163);
+}
+
+.dark-mode .project-btn:hover {
+  color: #7d9c94;
+  border-color: rgb(163, 163, 163);
+}
+
 /* CONTACT */
 
 #contact {
@@ -377,7 +433,7 @@ article .icon {
 }
 
 .email-icon {
-  height: 2.5rem;
+  height: 3.3rem;
 }
 
 /* FOOTER SECTION */
@@ -393,7 +449,7 @@ footer p {
 
 /* Dark Mode Styles */
 .dark-mode {
-  background-color: #333;
+  background-color: #1e1e21;
 }
 
 .dark-mode a {
@@ -415,9 +471,36 @@ footer p {
   color: #ccc; /* Slightly darker than white */
 }
 
+/* Dark Mode Bigger Section Text */
+.dark-mode .section__text__p3 {
+  color: #696770; /* Slightly darker than white */
+}
+
+/* Dark Mode Bigger Section Text */
+.dark-mode .section__text__p4 {
+  color: #696770; /* Slightly darker than white */
+}
+
 /* Dark Mode Para Text */
 .dark-mode .text-container {
   color: #ccc; /* Slightly darker than white */
 }
 
+.dark-mode .btn {
+  color: white;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
 
+.dark-mode .btn:hover {
+  background: #7d9c94;
+  color: black;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
