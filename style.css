@@ -505,17 +505,4 @@ footer p {
   border-radius: 2rem;
 }
 
-/* Styles for screens up to 1400px wide */
-@media screen and (max-width: 1400px) {
-  /* Add styles from the first CSS file */
-}
 
-/* Styles for screens up to 1200px wide */
-@media screen and (max-width: 1200px) {
-  /* Add styles from the first CSS file */
-}
-
-/* Styles for screens up to 600px wide (Mobile and small tablets) */
-@media screen and (max-width: 600px) {
-  /* Add styles from the first CSS file */
-}

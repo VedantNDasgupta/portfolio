@@ -1,24 +1,17 @@
-/* General styles for larger screens */
-#profile {
-  height: 83vh;
-  margin-bottom: 6rem;
-}
-
-.about-containers {
-  flex-wrap: wrap;
-}
-
-#contact,
-#projects {
-  height: fit-content;
-}
-
-/* Styles for screens up to 1400px wide */
 @media screen and (max-width: 1400px) {
-  /* These styles are already defined in the general styles section */
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
 }
 
-/* Styles for screens up to 1200px wide */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -40,7 +33,9 @@
   section,
   .section-container {
     height: fit-content;
-    margin: 0 5%; /* Adjusted margin for better spacing */
+  }
+  section {
+    margin: 0 5%;
   }
   .section__pic-container {
     width: 275px;
@@ -52,18 +47,17 @@
   }
 }
 
-/* Styles for screens up to 600px wide (Mobile and small tablets) */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: auto; /* Adjusted height for better spacing */
+    height: 40vh;
   }
   #profile {
-    height: auto; /* Adjusted height for better spacing */
+    height: 83vh;
     margin-bottom: 0;
   }
   article {
-    font-size: 1rem; /* Font size reset to default */
+    font-size: 1rem;
   }
   footer nav {
     height: fit-content;
@@ -79,7 +73,7 @@
   }
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem; /* Font size reset to default */
+    font-size: 1rem;
   }
   .experience-sub-title {
     font-size: 1.25rem;
@@ -93,8 +87,8 @@
     text-align: center;
   }
   .section__pic-container {
-    width: 100%; /* Adjusted width for better responsiveness */
-    height: auto; /* Adjusted height for better responsiveness */
+    width: auto;
+    height: 46vw;
     justify-content: center;
   }
   .section__text__p2 {
